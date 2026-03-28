@@ -1,0 +1,17 @@
+version: '3'
+services:
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    depends_on:
+      - nakama
+    environment:
+      - VITE_HOST=host
+      - VITE_PORT=7350
+  
+
+volumes:
+  data:
