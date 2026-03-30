@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tsc -p tsconfig.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,6 +15,7 @@
     "nakama-runtime": "github:heroiclabs/nakama-common"
   },
   "devDependencies": {
+    "esbuild": "^0.25.0",
     "typescript": "^6.0.2"
   }
 }
